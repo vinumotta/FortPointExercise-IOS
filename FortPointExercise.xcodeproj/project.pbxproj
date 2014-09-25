@@ -21,6 +21,7 @@
 		836AA57319AD33B900D5C648 /* FortPointExerciseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 836AA57219AD33B900D5C648 /* FortPointExerciseTests.m */; };
 		836AA57F19AD35A700D5C648 /* FPEventListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 836AA57D19AD35A700D5C648 /* FPEventListViewController.m */; };
 		836AA58019AD35A700D5C648 /* FPEventListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 836AA57E19AD35A700D5C648 /* FPEventListViewController.xib */; };
+		FA4CD06719D476DE00BDFF22 /* FPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4CD06619D476DE00BDFF22 /* FPUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		836AA57C19AD35A600D5C648 /* FPEventListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPEventListViewController.h; sourceTree = "<group>"; };
 		836AA57D19AD35A700D5C648 /* FPEventListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPEventListViewController.m; sourceTree = "<group>"; };
 		836AA57E19AD35A700D5C648 /* FPEventListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPEventListViewController.xib; sourceTree = "<group>"; };
+		FA4CD06519D476DE00BDFF22 /* FPUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPUser.h; sourceTree = "<group>"; };
+		FA4CD06619D476DE00BDFF22 /* FPUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPUser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		836AA55319AD33B900D5C648 /* FortPointExercise */ = {
 			isa = PBXGroup;
 			children = (
+				FA4CD06419D4767800BDFF22 /* Models */,
 				836AA55C19AD33B900D5C648 /* FPAppDelegate.h */,
 				836AA55D19AD33B900D5C648 /* FPAppDelegate.m */,
 				836AA57C19AD35A600D5C648 /* FPEventListViewController.h */,
@@ -150,6 +154,15 @@
 				836AA56F19AD33B900D5C648 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA4CD06419D4767800BDFF22 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA4CD06519D476DE00BDFF22 /* FPUser.h */,
+				FA4CD06619D476DE00BDFF22 /* FPUser.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4CD06719D476DE00BDFF22 /* FPUser.m in Sources */,
 				836AA57F19AD35A700D5C648 /* FPEventListViewController.m in Sources */,
 				836AA55E19AD33B900D5C648 /* FPAppDelegate.m in Sources */,
 				836AA55A19AD33B900D5C648 /* main.m in Sources */,
@@ -450,6 +464,7 @@
 				836AA57819AD33B900D5C648 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		836AA57919AD33B900D5C648 /* Build configuration list for PBXNativeTarget "FortPointExerciseTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +473,7 @@
 				836AA57B19AD33B900D5C648 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
