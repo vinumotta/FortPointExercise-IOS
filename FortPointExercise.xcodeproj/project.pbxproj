@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37AE6FF019DC9A70008A1D3C /* FPEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AE6FEF19DC9A70008A1D3C /* FPEvent.m */; };
 		836AA54E19AD33B900D5C648 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836AA54D19AD33B900D5C648 /* Foundation.framework */; };
 		836AA55019AD33B900D5C648 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836AA54F19AD33B900D5C648 /* CoreGraphics.framework */; };
 		836AA55219AD33B900D5C648 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836AA55119AD33B900D5C648 /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37AE6FEE19DC9A70008A1D3C /* FPEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPEvent.h; sourceTree = "<group>"; };
+		37AE6FEF19DC9A70008A1D3C /* FPEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPEvent.m; sourceTree = "<group>"; };
 		836AA54A19AD33B900D5C648 /* FortPointExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortPointExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		836AA54D19AD33B900D5C648 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		836AA54F19AD33B900D5C648 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -161,6 +164,8 @@
 			children = (
 				FA4CD06519D476DE00BDFF22 /* FPUser.h */,
 				FA4CD06619D476DE00BDFF22 /* FPUser.m */,
+				37AE6FEE19DC9A70008A1D3C /* FPEvent.h */,
+				37AE6FEF19DC9A70008A1D3C /* FPEvent.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37AE6FF019DC9A70008A1D3C /* FPEvent.m in Sources */,
 				FA4CD06719D476DE00BDFF22 /* FPUser.m in Sources */,
 				836AA57F19AD35A700D5C648 /* FPEventListViewController.m in Sources */,
 				836AA55E19AD33B900D5C648 /* FPAppDelegate.m in Sources */,
