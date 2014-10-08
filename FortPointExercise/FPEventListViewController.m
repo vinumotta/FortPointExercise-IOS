@@ -7,6 +7,7 @@
 //
 
 #import "FPEventListViewController.h"
+#import "FPBaseAPICall.h"
 
 @interface FPEventListViewController ()
 
@@ -29,6 +30,16 @@
     // Do any additional setup after loading the view from its nib.
     
     self.navigationController.navigationBar.barTintColor = [UIColor blueColor];
+    
+    FPBaseAPICall * sampleApiCall = [[FPBaseAPICall alloc] init];
+    
+    [sampleApiCall getWithParameters:nil successBlock:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"responseBoject = %@", responseObject);
+        
+    } failureBlock:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"error = %@", error);
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning
