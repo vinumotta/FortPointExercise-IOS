@@ -9,8 +9,9 @@
 #import "FPEventListViewController.h"
 #import "FPBaseAPICall.h"
 
-@interface FPEventListViewController ()
-
+@interface FPEventListViewController () <UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, strong) IBOutlet UITableView *eventTableView;
+@property (nonatomic, strong) NSArray *eventsArray;
 @end
 
 @implementation FPEventListViewController
@@ -34,11 +35,13 @@
     FPBaseAPICall * sampleApiCall = [[FPBaseAPICall alloc] init];
     
     [sampleApiCall getWithParameters:nil successBlock:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"responseBoject = %@", responseObject);
-        
+        NSLog(@"responseObject = %@", responseObject);
+        self.eventsArray = [[NSArray alloc] initWithArray:responseObject];
+        [self.eventTableView reloadData];
     } failureBlock:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"error = %@", error);
     }];
+    
     
 }
 
@@ -46,6 +49,35 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark- Table View delegate functions
+
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section
+{
+    return [self.eventsArray count];
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *defaultCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"eventCell"];
+    
+    NSString *eventTitle = [[self.eventsArray objectAtIndex:[indexPath row]] objectForKey:@"title"];
+    [defaultCell.textLabel setText:eventTitle];
+    
+    NSString *descriptionTitle = [[self.eventsArray objectAtIndex:[indexPath row]] objectForKey:@"description"];
+    [defaultCell.detailTextLabel setText:descriptionTitle];
+    
+    return defaultCell;
+    
 }
 
 @end
