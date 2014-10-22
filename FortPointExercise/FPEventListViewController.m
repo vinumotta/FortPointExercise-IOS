@@ -8,10 +8,12 @@
 
 #import "FPEventListViewController.h"
 #import "FPBaseAPICall.h"
+#import "FPEventsTableViewCell.h"
 
 @interface FPEventListViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) IBOutlet UITableView *eventTableView;
 @property (nonatomic, strong) NSArray *eventsArray;
+//@property
 @end
 
 @implementation FPEventListViewController
@@ -34,6 +36,8 @@
     
     FPBaseAPICall * sampleApiCall = [[FPBaseAPICall alloc] init];
     
+    
+    
     [sampleApiCall getWithParameters:nil successBlock:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"responseObject = %@", responseObject);
         self.eventsArray = [[NSArray alloc] initWithArray:responseObject];
@@ -43,6 +47,7 @@
     }];
     
     
+    [self.eventTableView registerNib:[UINib nibWithNibName:@"FPEventsTableViewCell" bundle:nil] forCellReuseIdentifier:@"eventsTableViewCell"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,16 +73,26 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *defaultCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"eventCell"];
+    FPEventsTableViewCell *eventCell = [self.eventTableView dequeueReusableCellWithIdentifier:@"eventsTableViewCell"];
     
-    NSString *eventTitle = [[self.eventsArray objectAtIndex:[indexPath row]] objectForKey:@"title"];
-    [defaultCell.textLabel setText:eventTitle];
+    NSDictionary * currentEvent = [[NSDictionary alloc] initWithDictionary:[self.eventsArray objectAtIndex:[indexPath row]]];
     
-    NSString *descriptionTitle = [[self.eventsArray objectAtIndex:[indexPath row]] objectForKey:@"description"];
-    [defaultCell.detailTextLabel setText:descriptionTitle];
+    NSString *eventTitle = [currentEvent objectForKey:@"title"];
+    [eventCell.title setText:eventTitle];
     
-    return defaultCell;
+    NSString *descriptionString = [currentEvent objectForKey:@"description"];
     
+    [eventCell.descriptionLabel setText:descriptionString];
+    
+    NSString *locationString = [currentEvent objectForKey:@"location"];
+    [eventCell.location setText:locationString];
+    
+    return eventCell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+   return self.view.frame.size.height;
 }
 
 @end

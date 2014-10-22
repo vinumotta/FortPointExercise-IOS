@@ -25,6 +25,8 @@
 		836AA57319AD33B900D5C648 /* FortPointExerciseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 836AA57219AD33B900D5C648 /* FortPointExerciseTests.m */; };
 		836AA57F19AD35A700D5C648 /* FPEventListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 836AA57D19AD35A700D5C648 /* FPEventListViewController.m */; };
 		836AA58019AD35A700D5C648 /* FPEventListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 836AA57E19AD35A700D5C648 /* FPEventListViewController.xib */; };
+		8377D03819F8638800CF2D8D /* FPEventsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8377D03619F8638800CF2D8D /* FPEventsTableViewCell.m */; };
+		8377D03919F8638800CF2D8D /* FPEventsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8377D03719F8638800CF2D8D /* FPEventsTableViewCell.xib */; };
 		FA4CD06719D476DE00BDFF22 /* FPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4CD06619D476DE00BDFF22 /* FPUser.m */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,9 @@
 		836AA57C19AD35A600D5C648 /* FPEventListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPEventListViewController.h; sourceTree = "<group>"; };
 		836AA57D19AD35A700D5C648 /* FPEventListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPEventListViewController.m; sourceTree = "<group>"; };
 		836AA57E19AD35A700D5C648 /* FPEventListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPEventListViewController.xib; sourceTree = "<group>"; };
+		8377D03519F8638800CF2D8D /* FPEventsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPEventsTableViewCell.h; sourceTree = "<group>"; };
+		8377D03619F8638800CF2D8D /* FPEventsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPEventsTableViewCell.m; sourceTree = "<group>"; };
+		8377D03719F8638800CF2D8D /* FPEventsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPEventsTableViewCell.xib; sourceTree = "<group>"; };
 		B5AB4717975ABA3EE836C889 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8C946E135BEF522275B18F3 /* Pods-FortPointExercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortPointExercise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FortPointExercise/Pods-FortPointExercise.debug.xcconfig"; sourceTree = "<group>"; };
 		E11E571F03A92BD128A54643 /* libPods-FortPointExercise.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FortPointExercise.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +155,7 @@
 		836AA55319AD33B900D5C648 /* FortPointExercise */ = {
 			isa = PBXGroup;
 			children = (
+				8377D03419F8633200CF2D8D /* Views */,
 				83322B4A19E5EAE100153106 /* API */,
 				FA4CD06419D4767800BDFF22 /* Models */,
 				836AA55C19AD33B900D5C648 /* FPAppDelegate.h */,
@@ -190,6 +196,16 @@
 				836AA56F19AD33B900D5C648 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8377D03419F8633200CF2D8D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8377D03519F8638800CF2D8D /* FPEventsTableViewCell.h */,
+				8377D03619F8638800CF2D8D /* FPEventsTableViewCell.m */,
+				8377D03719F8638800CF2D8D /* FPEventsTableViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		FA4CD06419D4767800BDFF22 /* Models */ = {
@@ -281,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8377D03919F8638800CF2D8D /* FPEventsTableViewCell.xib in Resources */,
 				836AA55819AD33B900D5C648 /* InfoPlist.strings in Resources */,
 				836AA58019AD35A700D5C648 /* FPEventListViewController.xib in Resources */,
 				836AA56019AD33B900D5C648 /* Images.xcassets in Resources */,
@@ -341,6 +358,7 @@
 				836AA55E19AD33B900D5C648 /* FPAppDelegate.m in Sources */,
 				836AA55A19AD33B900D5C648 /* main.m in Sources */,
 				83322B4D19E5EB1700153106 /* FPBaseAPICall.m in Sources */,
+				8377D03819F8638800CF2D8D /* FPEventsTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
