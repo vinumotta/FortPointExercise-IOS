@@ -1,576 +1,1326 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		37AE6FF019DC9A70008A1D3C /* FPEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AE6FEF19DC9A70008A1D3C /* FPEvent.m */; };
-		5707E058DBD298AEAEB31975 /* libPods-FortPointExercise.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E11E571F03A92BD128A54643 /* libPods-FortPointExercise.a */; };
-		5AD2BE2D633B42AEA28FE3F7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AB4717975ABA3EE836C889 /* libPods.a */; };
-		83322B4D19E5EB1700153106 /* FPBaseAPICall.m in Sources */ = {isa = PBXBuildFile; fileRef = 83322B4C19E5EB1700153106 /* FPBaseAPICall.m */; };
-		836AA54E19AD33B900D5C648 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836AA54D19AD33B900D5C648 /* Foundation.framework */; };
-		836AA55019AD33B900D5C648 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836AA54F19AD33B900D5C648 /* CoreGraphics.framework */; };
-		836AA55219AD33B900D5C648 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836AA55119AD33B900D5C648 /* UIKit.framework */; };
-		836AA55819AD33B900D5C648 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 836AA55619AD33B900D5C648 /* InfoPlist.strings */; };
-		836AA55A19AD33B900D5C648 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 836AA55919AD33B900D5C648 /* main.m */; };
-		836AA55E19AD33B900D5C648 /* FPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 836AA55D19AD33B900D5C648 /* FPAppDelegate.m */; };
-		836AA56019AD33B900D5C648 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836AA55F19AD33B900D5C648 /* Images.xcassets */; };
-		836AA56719AD33B900D5C648 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836AA56619AD33B900D5C648 /* XCTest.framework */; };
-		836AA56819AD33B900D5C648 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836AA54D19AD33B900D5C648 /* Foundation.framework */; };
-		836AA56919AD33B900D5C648 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836AA55119AD33B900D5C648 /* UIKit.framework */; };
-		836AA57119AD33B900D5C648 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 836AA56F19AD33B900D5C648 /* InfoPlist.strings */; };
-		836AA57319AD33B900D5C648 /* FortPointExerciseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 836AA57219AD33B900D5C648 /* FortPointExerciseTests.m */; };
-		836AA57F19AD35A700D5C648 /* FPEventListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 836AA57D19AD35A700D5C648 /* FPEventListViewController.m */; };
-		836AA58019AD35A700D5C648 /* FPEventListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 836AA57E19AD35A700D5C648 /* FPEventListViewController.xib */; };
-		8377D03819F8638800CF2D8D /* FPEventsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8377D03619F8638800CF2D8D /* FPEventsTableViewCell.m */; };
-		8377D03919F8638800CF2D8D /* FPEventsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8377D03719F8638800CF2D8D /* FPEventsTableViewCell.xib */; };
-		FA4CD06719D476DE00BDFF22 /* FPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4CD06619D476DE00BDFF22 /* FPUser.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		836AA56A19AD33B900D5C648 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 836AA54219AD33B900D5C648 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 836AA54919AD33B900D5C648;
-			remoteInfo = FortPointExercise;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		2006869BAE1F9DD7B491D07C /* Pods-FortPointExercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortPointExercise.release.xcconfig"; path = "Pods/Target Support Files/Pods-FortPointExercise/Pods-FortPointExercise.release.xcconfig"; sourceTree = "<group>"; };
-		37AE6FEE19DC9A70008A1D3C /* FPEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPEvent.h; sourceTree = "<group>"; };
-		37AE6FEF19DC9A70008A1D3C /* FPEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPEvent.m; sourceTree = "<group>"; };
-		83322B4B19E5EB1700153106 /* FPBaseAPICall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPBaseAPICall.h; sourceTree = "<group>"; };
-		83322B4C19E5EB1700153106 /* FPBaseAPICall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPBaseAPICall.m; sourceTree = "<group>"; };
-		836AA54A19AD33B900D5C648 /* FortPointExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortPointExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		836AA54D19AD33B900D5C648 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		836AA54F19AD33B900D5C648 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		836AA55119AD33B900D5C648 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		836AA55519AD33B900D5C648 /* FortPointExercise-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FortPointExercise-Info.plist"; sourceTree = "<group>"; };
-		836AA55719AD33B900D5C648 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		836AA55919AD33B900D5C648 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		836AA55B19AD33B900D5C648 /* FortPointExercise-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FortPointExercise-Prefix.pch"; sourceTree = "<group>"; };
-		836AA55C19AD33B900D5C648 /* FPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPAppDelegate.h; sourceTree = "<group>"; };
-		836AA55D19AD33B900D5C648 /* FPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPAppDelegate.m; sourceTree = "<group>"; };
-		836AA55F19AD33B900D5C648 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		836AA56519AD33B900D5C648 /* FortPointExerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FortPointExerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		836AA56619AD33B900D5C648 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		836AA56E19AD33B900D5C648 /* FortPointExerciseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FortPointExerciseTests-Info.plist"; sourceTree = "<group>"; };
-		836AA57019AD33B900D5C648 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		836AA57219AD33B900D5C648 /* FortPointExerciseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FortPointExerciseTests.m; sourceTree = "<group>"; };
-		836AA57C19AD35A600D5C648 /* FPEventListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPEventListViewController.h; sourceTree = "<group>"; };
-		836AA57D19AD35A700D5C648 /* FPEventListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPEventListViewController.m; sourceTree = "<group>"; };
-		836AA57E19AD35A700D5C648 /* FPEventListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPEventListViewController.xib; sourceTree = "<group>"; };
-		8377D03519F8638800CF2D8D /* FPEventsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPEventsTableViewCell.h; sourceTree = "<group>"; };
-		8377D03619F8638800CF2D8D /* FPEventsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPEventsTableViewCell.m; sourceTree = "<group>"; };
-		8377D03719F8638800CF2D8D /* FPEventsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPEventsTableViewCell.xib; sourceTree = "<group>"; };
-		B5AB4717975ABA3EE836C889 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8C946E135BEF522275B18F3 /* Pods-FortPointExercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortPointExercise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FortPointExercise/Pods-FortPointExercise.debug.xcconfig"; sourceTree = "<group>"; };
-		E11E571F03A92BD128A54643 /* libPods-FortPointExercise.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FortPointExercise.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA4CD06519D476DE00BDFF22 /* FPUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPUser.h; sourceTree = "<group>"; };
-		FA4CD06619D476DE00BDFF22 /* FPUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPUser.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		836AA54719AD33B900D5C648 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				836AA55019AD33B900D5C648 /* CoreGraphics.framework in Frameworks */,
-				836AA55219AD33B900D5C648 /* UIKit.framework in Frameworks */,
-				836AA54E19AD33B900D5C648 /* Foundation.framework in Frameworks */,
-				5707E058DBD298AEAEB31975 /* libPods-FortPointExercise.a in Frameworks */,
-				5AD2BE2D633B42AEA28FE3F7 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		836AA56219AD33B900D5C648 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				836AA56719AD33B900D5C648 /* XCTest.framework in Frameworks */,
-				836AA56919AD33B900D5C648 /* UIKit.framework in Frameworks */,
-				836AA56819AD33B900D5C648 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		1CEC4413FDF4DC34AA31BEE5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B8C946E135BEF522275B18F3 /* Pods-FortPointExercise.debug.xcconfig */,
-				2006869BAE1F9DD7B491D07C /* Pods-FortPointExercise.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		83322B4A19E5EAE100153106 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				83322B4B19E5EB1700153106 /* FPBaseAPICall.h */,
-				83322B4C19E5EB1700153106 /* FPBaseAPICall.m */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		836AA54119AD33B900D5C648 = {
-			isa = PBXGroup;
-			children = (
-				836AA55319AD33B900D5C648 /* FortPointExercise */,
-				836AA56C19AD33B900D5C648 /* FortPointExerciseTests */,
-				836AA54C19AD33B900D5C648 /* Frameworks */,
-				836AA54B19AD33B900D5C648 /* Products */,
-				1CEC4413FDF4DC34AA31BEE5 /* Pods */,
-			);
-			sourceTree = "<group>";
-		};
-		836AA54B19AD33B900D5C648 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				836AA54A19AD33B900D5C648 /* FortPointExercise.app */,
-				836AA56519AD33B900D5C648 /* FortPointExerciseTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		836AA54C19AD33B900D5C648 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				836AA54D19AD33B900D5C648 /* Foundation.framework */,
-				836AA54F19AD33B900D5C648 /* CoreGraphics.framework */,
-				836AA55119AD33B900D5C648 /* UIKit.framework */,
-				836AA56619AD33B900D5C648 /* XCTest.framework */,
-				E11E571F03A92BD128A54643 /* libPods-FortPointExercise.a */,
-				B5AB4717975ABA3EE836C889 /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		836AA55319AD33B900D5C648 /* FortPointExercise */ = {
-			isa = PBXGroup;
-			children = (
-				8377D03419F8633200CF2D8D /* Views */,
-				83322B4A19E5EAE100153106 /* API */,
-				FA4CD06419D4767800BDFF22 /* Models */,
-				836AA55C19AD33B900D5C648 /* FPAppDelegate.h */,
-				836AA55D19AD33B900D5C648 /* FPAppDelegate.m */,
-				836AA57C19AD35A600D5C648 /* FPEventListViewController.h */,
-				836AA57D19AD35A700D5C648 /* FPEventListViewController.m */,
-				836AA57E19AD35A700D5C648 /* FPEventListViewController.xib */,
-				836AA55F19AD33B900D5C648 /* Images.xcassets */,
-				836AA55419AD33B900D5C648 /* Supporting Files */,
-			);
-			path = FortPointExercise;
-			sourceTree = "<group>";
-		};
-		836AA55419AD33B900D5C648 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				836AA55519AD33B900D5C648 /* FortPointExercise-Info.plist */,
-				836AA55619AD33B900D5C648 /* InfoPlist.strings */,
-				836AA55919AD33B900D5C648 /* main.m */,
-				836AA55B19AD33B900D5C648 /* FortPointExercise-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		836AA56C19AD33B900D5C648 /* FortPointExerciseTests */ = {
-			isa = PBXGroup;
-			children = (
-				836AA57219AD33B900D5C648 /* FortPointExerciseTests.m */,
-				836AA56D19AD33B900D5C648 /* Supporting Files */,
-			);
-			path = FortPointExerciseTests;
-			sourceTree = "<group>";
-		};
-		836AA56D19AD33B900D5C648 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				836AA56E19AD33B900D5C648 /* FortPointExerciseTests-Info.plist */,
-				836AA56F19AD33B900D5C648 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8377D03419F8633200CF2D8D /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				8377D03519F8638800CF2D8D /* FPEventsTableViewCell.h */,
-				8377D03619F8638800CF2D8D /* FPEventsTableViewCell.m */,
-				8377D03719F8638800CF2D8D /* FPEventsTableViewCell.xib */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		FA4CD06419D4767800BDFF22 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				FA4CD06519D476DE00BDFF22 /* FPUser.h */,
-				FA4CD06619D476DE00BDFF22 /* FPUser.m */,
-				37AE6FEE19DC9A70008A1D3C /* FPEvent.h */,
-				37AE6FEF19DC9A70008A1D3C /* FPEvent.m */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		836AA54919AD33B900D5C648 /* FortPointExercise */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 836AA57619AD33B900D5C648 /* Build configuration list for PBXNativeTarget "FortPointExercise" */;
-			buildPhases = (
-				B9A884CE51DCB6AA63A65D44 /* Check Pods Manifest.lock */,
-				836AA54619AD33B900D5C648 /* Sources */,
-				836AA54719AD33B900D5C648 /* Frameworks */,
-				836AA54819AD33B900D5C648 /* Resources */,
-				202D498DBD8F912FADB76F50 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FortPointExercise;
-			productName = FortPointExercise;
-			productReference = 836AA54A19AD33B900D5C648 /* FortPointExercise.app */;
-			productType = "com.apple.product-type.application";
-		};
-		836AA56419AD33B900D5C648 /* FortPointExerciseTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 836AA57919AD33B900D5C648 /* Build configuration list for PBXNativeTarget "FortPointExerciseTests" */;
-			buildPhases = (
-				836AA56119AD33B900D5C648 /* Sources */,
-				836AA56219AD33B900D5C648 /* Frameworks */,
-				836AA56319AD33B900D5C648 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				836AA56B19AD33B900D5C648 /* PBXTargetDependency */,
-			);
-			name = FortPointExerciseTests;
-			productName = FortPointExerciseTests;
-			productReference = 836AA56519AD33B900D5C648 /* FortPointExerciseTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		836AA54219AD33B900D5C648 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = FP;
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = FPE;
-				TargetAttributes = {
-					836AA56419AD33B900D5C648 = {
-						TestTargetID = 836AA54919AD33B900D5C648;
-					};
-				};
-			};
-			buildConfigurationList = 836AA54519AD33B900D5C648 /* Build configuration list for PBXProject "FortPointExercise" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 836AA54119AD33B900D5C648;
-			productRefGroup = 836AA54B19AD33B900D5C648 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				836AA54919AD33B900D5C648 /* FortPointExercise */,
-				836AA56419AD33B900D5C648 /* FortPointExerciseTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		836AA54819AD33B900D5C648 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8377D03919F8638800CF2D8D /* FPEventsTableViewCell.xib in Resources */,
-				836AA55819AD33B900D5C648 /* InfoPlist.strings in Resources */,
-				836AA58019AD35A700D5C648 /* FPEventListViewController.xib in Resources */,
-				836AA56019AD33B900D5C648 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		836AA56319AD33B900D5C648 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				836AA57119AD33B900D5C648 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		202D498DBD8F912FADB76F50 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B9A884CE51DCB6AA63A65D44 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		836AA54619AD33B900D5C648 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				37AE6FF019DC9A70008A1D3C /* FPEvent.m in Sources */,
-				FA4CD06719D476DE00BDFF22 /* FPUser.m in Sources */,
-				836AA57F19AD35A700D5C648 /* FPEventListViewController.m in Sources */,
-				836AA55E19AD33B900D5C648 /* FPAppDelegate.m in Sources */,
-				836AA55A19AD33B900D5C648 /* main.m in Sources */,
-				83322B4D19E5EB1700153106 /* FPBaseAPICall.m in Sources */,
-				8377D03819F8638800CF2D8D /* FPEventsTableViewCell.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		836AA56119AD33B900D5C648 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				836AA57319AD33B900D5C648 /* FortPointExerciseTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		836AA56B19AD33B900D5C648 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 836AA54919AD33B900D5C648 /* FortPointExercise */;
-			targetProxy = 836AA56A19AD33B900D5C648 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		836AA55619AD33B900D5C648 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				836AA55719AD33B900D5C648 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		836AA56F19AD33B900D5C648 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				836AA57019AD33B900D5C648 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		836AA57419AD33B900D5C648 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		836AA57519AD33B900D5C648 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		836AA57719AD33B900D5C648 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8C946E135BEF522275B18F3 /* Pods-FortPointExercise.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FortPointExercise/FortPointExercise-Prefix.pch";
-				INFOPLIST_FILE = "FortPointExercise/FortPointExercise-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		836AA57819AD33B900D5C648 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2006869BAE1F9DD7B491D07C /* Pods-FortPointExercise.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FortPointExercise/FortPointExercise-Prefix.pch";
-				INFOPLIST_FILE = "FortPointExercise/FortPointExercise-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		836AA57A19AD33B900D5C648 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FortPointExercise.app/FortPointExercise";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FortPointExercise/FortPointExercise-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "FortPointExerciseTests/FortPointExerciseTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		836AA57B19AD33B900D5C648 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FortPointExercise.app/FortPointExercise";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FortPointExercise/FortPointExercise-Prefix.pch";
-				INFOPLIST_FILE = "FortPointExerciseTests/FortPointExerciseTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		836AA54519AD33B900D5C648 /* Build configuration list for PBXProject "FortPointExercise" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				836AA57419AD33B900D5C648 /* Debug */,
-				836AA57519AD33B900D5C648 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		836AA57619AD33B900D5C648 /* Build configuration list for PBXNativeTarget "FortPointExercise" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				836AA57719AD33B900D5C648 /* Debug */,
-				836AA57819AD33B900D5C648 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		836AA57919AD33B900D5C648 /* Build configuration list for PBXNativeTarget "FortPointExerciseTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				836AA57A19AD33B900D5C648 /* Debug */,
-				836AA57B19AD33B900D5C648 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 836AA54219AD33B900D5C648 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>1CEC4413FDF4DC34AA31BEE5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B8C946E135BEF522275B18F3</string>
+				<string>2006869BAE1F9DD7B491D07C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2006869BAE1F9DD7B491D07C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-FortPointExercise.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-FortPointExercise/Pods-FortPointExercise.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>202D498DBD8F912FADB76F50</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-FortPointExercise/Pods-FortPointExercise-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>37AE6FEE19DC9A70008A1D3C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FPEvent.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>37AE6FEF19DC9A70008A1D3C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FPEvent.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>37AE6FF019DC9A70008A1D3C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>37AE6FEF19DC9A70008A1D3C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>83322B4A19E5EAE100153106</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>83322B4B19E5EB1700153106</string>
+				<string>83322B4C19E5EB1700153106</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>API</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>83322B4B19E5EB1700153106</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FPBaseAPICall.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>83322B4C19E5EB1700153106</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FPBaseAPICall.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>83322B4D19E5EB1700153106</key>
+		<dict>
+			<key>fileRef</key>
+			<string>83322B4C19E5EB1700153106</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>836AA54119AD33B900D5C648</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>836AA55319AD33B900D5C648</string>
+				<string>836AA56C19AD33B900D5C648</string>
+				<string>836AA54C19AD33B900D5C648</string>
+				<string>836AA54B19AD33B900D5C648</string>
+				<string>1CEC4413FDF4DC34AA31BEE5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>836AA54219AD33B900D5C648</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>FP</string>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>FPE</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>836AA56419AD33B900D5C648</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>836AA54919AD33B900D5C648</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>836AA54519AD33B900D5C648</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>836AA54119AD33B900D5C648</string>
+			<key>productRefGroup</key>
+			<string>836AA54B19AD33B900D5C648</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>836AA54919AD33B900D5C648</string>
+				<string>836AA56419AD33B900D5C648</string>
+			</array>
+		</dict>
+		<key>836AA54519AD33B900D5C648</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>836AA57419AD33B900D5C648</string>
+				<string>836AA57519AD33B900D5C648</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>836AA54619AD33B900D5C648</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>37AE6FF019DC9A70008A1D3C</string>
+				<string>FA4CD06719D476DE00BDFF22</string>
+				<string>836AA57F19AD35A700D5C648</string>
+				<string>836AA55E19AD33B900D5C648</string>
+				<string>836AA55A19AD33B900D5C648</string>
+				<string>83322B4D19E5EB1700153106</string>
+				<string>8377D03819F8638800CF2D8D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>836AA54719AD33B900D5C648</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>836AA55019AD33B900D5C648</string>
+				<string>836AA55219AD33B900D5C648</string>
+				<string>836AA54E19AD33B900D5C648</string>
+				<string>A8104EE40C11D966ADD831CB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>836AA54819AD33B900D5C648</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8377D03919F8638800CF2D8D</string>
+				<string>836AA55819AD33B900D5C648</string>
+				<string>836AA58019AD35A700D5C648</string>
+				<string>836AA56019AD33B900D5C648</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>836AA54919AD33B900D5C648</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>836AA57619AD33B900D5C648</string>
+			<key>buildPhases</key>
+			<array>
+				<string>B9A884CE51DCB6AA63A65D44</string>
+				<string>836AA54619AD33B900D5C648</string>
+				<string>836AA54719AD33B900D5C648</string>
+				<string>836AA54819AD33B900D5C648</string>
+				<string>202D498DBD8F912FADB76F50</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>FortPointExercise</string>
+			<key>productName</key>
+			<string>FortPointExercise</string>
+			<key>productReference</key>
+			<string>836AA54A19AD33B900D5C648</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>836AA54A19AD33B900D5C648</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>FortPointExercise.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>836AA54B19AD33B900D5C648</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>836AA54A19AD33B900D5C648</string>
+				<string>836AA56519AD33B900D5C648</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>836AA54C19AD33B900D5C648</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>836AA54D19AD33B900D5C648</string>
+				<string>836AA54F19AD33B900D5C648</string>
+				<string>836AA55119AD33B900D5C648</string>
+				<string>836AA56619AD33B900D5C648</string>
+				<string>E11E571F03A92BD128A54643</string>
+				<string>B5AB4717975ABA3EE836C889</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>836AA54D19AD33B900D5C648</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>836AA54E19AD33B900D5C648</key>
+		<dict>
+			<key>fileRef</key>
+			<string>836AA54D19AD33B900D5C648</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>836AA54F19AD33B900D5C648</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>836AA55019AD33B900D5C648</key>
+		<dict>
+			<key>fileRef</key>
+			<string>836AA54F19AD33B900D5C648</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>836AA55119AD33B900D5C648</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>836AA55219AD33B900D5C648</key>
+		<dict>
+			<key>fileRef</key>
+			<string>836AA55119AD33B900D5C648</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>836AA55319AD33B900D5C648</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8377D03419F8633200CF2D8D</string>
+				<string>83322B4A19E5EAE100153106</string>
+				<string>FA4CD06419D4767800BDFF22</string>
+				<string>836AA55C19AD33B900D5C648</string>
+				<string>836AA55D19AD33B900D5C648</string>
+				<string>836AA57C19AD35A600D5C648</string>
+				<string>836AA57D19AD35A700D5C648</string>
+				<string>836AA57E19AD35A700D5C648</string>
+				<string>836AA55F19AD33B900D5C648</string>
+				<string>836AA55419AD33B900D5C648</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>FortPointExercise</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>836AA55419AD33B900D5C648</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>836AA55519AD33B900D5C648</string>
+				<string>836AA55619AD33B900D5C648</string>
+				<string>836AA55919AD33B900D5C648</string>
+				<string>836AA55B19AD33B900D5C648</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>836AA55519AD33B900D5C648</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>FortPointExercise-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>836AA55619AD33B900D5C648</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>836AA55719AD33B900D5C648</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>836AA55719AD33B900D5C648</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>836AA55819AD33B900D5C648</key>
+		<dict>
+			<key>fileRef</key>
+			<string>836AA55619AD33B900D5C648</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>836AA55919AD33B900D5C648</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>836AA55A19AD33B900D5C648</key>
+		<dict>
+			<key>fileRef</key>
+			<string>836AA55919AD33B900D5C648</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>836AA55B19AD33B900D5C648</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FortPointExercise-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>836AA55C19AD33B900D5C648</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FPAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>836AA55D19AD33B900D5C648</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FPAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>836AA55E19AD33B900D5C648</key>
+		<dict>
+			<key>fileRef</key>
+			<string>836AA55D19AD33B900D5C648</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>836AA55F19AD33B900D5C648</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>836AA56019AD33B900D5C648</key>
+		<dict>
+			<key>fileRef</key>
+			<string>836AA55F19AD33B900D5C648</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>836AA56119AD33B900D5C648</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>836AA57319AD33B900D5C648</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>836AA56219AD33B900D5C648</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>836AA56719AD33B900D5C648</string>
+				<string>836AA56919AD33B900D5C648</string>
+				<string>836AA56819AD33B900D5C648</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>836AA56319AD33B900D5C648</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>836AA57119AD33B900D5C648</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>836AA56419AD33B900D5C648</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>836AA57919AD33B900D5C648</string>
+			<key>buildPhases</key>
+			<array>
+				<string>836AA56119AD33B900D5C648</string>
+				<string>836AA56219AD33B900D5C648</string>
+				<string>836AA56319AD33B900D5C648</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>836AA56B19AD33B900D5C648</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>FortPointExerciseTests</string>
+			<key>productName</key>
+			<string>FortPointExerciseTests</string>
+			<key>productReference</key>
+			<string>836AA56519AD33B900D5C648</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>836AA56519AD33B900D5C648</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>FortPointExerciseTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>836AA56619AD33B900D5C648</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>836AA56719AD33B900D5C648</key>
+		<dict>
+			<key>fileRef</key>
+			<string>836AA56619AD33B900D5C648</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>836AA56819AD33B900D5C648</key>
+		<dict>
+			<key>fileRef</key>
+			<string>836AA54D19AD33B900D5C648</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>836AA56919AD33B900D5C648</key>
+		<dict>
+			<key>fileRef</key>
+			<string>836AA55119AD33B900D5C648</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>836AA56A19AD33B900D5C648</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>836AA54219AD33B900D5C648</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>836AA54919AD33B900D5C648</string>
+			<key>remoteInfo</key>
+			<string>FortPointExercise</string>
+		</dict>
+		<key>836AA56B19AD33B900D5C648</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>836AA54919AD33B900D5C648</string>
+			<key>targetProxy</key>
+			<string>836AA56A19AD33B900D5C648</string>
+		</dict>
+		<key>836AA56C19AD33B900D5C648</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>836AA57219AD33B900D5C648</string>
+				<string>836AA56D19AD33B900D5C648</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>FortPointExerciseTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>836AA56D19AD33B900D5C648</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>836AA56E19AD33B900D5C648</string>
+				<string>836AA56F19AD33B900D5C648</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>836AA56E19AD33B900D5C648</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>FortPointExerciseTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>836AA56F19AD33B900D5C648</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>836AA57019AD33B900D5C648</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>836AA57019AD33B900D5C648</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>836AA57119AD33B900D5C648</key>
+		<dict>
+			<key>fileRef</key>
+			<string>836AA56F19AD33B900D5C648</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>836AA57219AD33B900D5C648</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FortPointExerciseTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>836AA57319AD33B900D5C648</key>
+		<dict>
+			<key>fileRef</key>
+			<string>836AA57219AD33B900D5C648</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>836AA57419AD33B900D5C648</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>836AA57519AD33B900D5C648</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>836AA57619AD33B900D5C648</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>836AA57719AD33B900D5C648</string>
+				<string>836AA57819AD33B900D5C648</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>836AA57719AD33B900D5C648</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>B8C946E135BEF522275B18F3</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>FortPointExercise/FortPointExercise-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>FortPointExercise/FortPointExercise-Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>836AA57819AD33B900D5C648</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>2006869BAE1F9DD7B491D07C</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>FortPointExercise/FortPointExercise-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>FortPointExercise/FortPointExercise-Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>836AA57919AD33B900D5C648</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>836AA57A19AD33B900D5C648</string>
+				<string>836AA57B19AD33B900D5C648</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>836AA57A19AD33B900D5C648</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/FortPointExercise.app/FortPointExercise</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>FortPointExercise/FortPointExercise-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>FortPointExerciseTests/FortPointExerciseTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>836AA57B19AD33B900D5C648</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/FortPointExercise.app/FortPointExercise</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>FortPointExercise/FortPointExercise-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>FortPointExerciseTests/FortPointExerciseTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>836AA57C19AD35A600D5C648</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FPEventListViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>836AA57D19AD35A700D5C648</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FPEventListViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>836AA57E19AD35A700D5C648</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>FPEventListViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>836AA57F19AD35A700D5C648</key>
+		<dict>
+			<key>fileRef</key>
+			<string>836AA57D19AD35A700D5C648</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>836AA58019AD35A700D5C648</key>
+		<dict>
+			<key>fileRef</key>
+			<string>836AA57E19AD35A700D5C648</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8377D03419F8633200CF2D8D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8377D03519F8638800CF2D8D</string>
+				<string>8377D03619F8638800CF2D8D</string>
+				<string>8377D03719F8638800CF2D8D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Views</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8377D03519F8638800CF2D8D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FPEventsTableViewCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8377D03619F8638800CF2D8D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FPEventsTableViewCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8377D03719F8638800CF2D8D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>FPEventsTableViewCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8377D03819F8638800CF2D8D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8377D03619F8638800CF2D8D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8377D03919F8638800CF2D8D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8377D03719F8638800CF2D8D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A8104EE40C11D966ADD831CB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E11E571F03A92BD128A54643</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B5AB4717975ABA3EE836C889</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B8C946E135BEF522275B18F3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-FortPointExercise.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-FortPointExercise/Pods-FortPointExercise.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B9A884CE51DCB6AA63A65D44</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>E11E571F03A92BD128A54643</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-FortPointExercise.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>FA4CD06419D4767800BDFF22</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FA4CD06519D476DE00BDFF22</string>
+				<string>FA4CD06619D476DE00BDFF22</string>
+				<string>37AE6FEE19DC9A70008A1D3C</string>
+				<string>37AE6FEF19DC9A70008A1D3C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Models</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA4CD06519D476DE00BDFF22</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FPUser.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA4CD06619D476DE00BDFF22</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FPUser.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA4CD06719D476DE00BDFF22</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA4CD06619D476DE00BDFF22</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>836AA54219AD33B900D5C648</string>
+</dict>
+</plist>
